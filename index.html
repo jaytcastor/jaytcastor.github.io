@@ -191,6 +191,18 @@
     display: block;
     border-top: 1px solid var(--line);
   }
+  .tour-embed {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-top: 1px solid var(--line);
+    background: #000;
+  }
+  .tour-embed iframe {
+    position: absolute; inset: 0;
+    width: 100%; height: 100%;
+    border: 0; display: block;
+  }
   .skills {
     display: flex;
     flex-wrap: wrap;
@@ -293,6 +305,9 @@
         <dt>What it does</dt>
         <dd>Web-based membership management with document verification via a hash-chain audit trail, IP-logged access history, and a built-in assistant chatbot for member queries — self-hosted end to end, including the language model.</dd>
       </dl>
+      <div class="tour-embed">
+        <iframe src="dmi-tour.html" title="DMI Membership System — Product Tour" loading="lazy" allow="autoplay"></iframe>
+      </div>
     </article>
 
     <article class="record">
