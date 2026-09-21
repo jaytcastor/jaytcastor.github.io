@@ -188,8 +188,15 @@
 
   .record-video {
     width: 100%;
+    height: auto;
     display: block;
     border-top: 1px solid var(--line);
+    background: #14180F;
+  }
+  .record-caption {
+    padding: 12px 24px 18px;
+    font-size: 0.84rem;
+    color: var(--ink-soft);
   }
   .skills {
     display: flex;
@@ -293,9 +300,10 @@
         <dt>What it does</dt>
         <dd>Web-based membership management with document verification via a hash-chain audit trail, IP-logged access history, and a built-in assistant chatbot for member queries — self-hosted end to end, including the language model.</dd>
       </dl>
-      <video class="record-video" controls preload="none" playsinline poster="dmi-tour-poster.jpg" aria-label="Product tour video of the DMI Membership System">
-        <source src="dmi-tour.mp4" type="video/mp4">
+      <video class="record-video" controls preload="none" playsinline width="1920" height="1080" poster="dmi-tour-poster.jpg?v=2" aria-label="Product tour video of the DMI Membership System">
+        <source src="dmi-tour.mp4?v=2" type="video/mp4">
       </video>
+      <p class="record-caption">Product tour — 44s. Member names, contact details, account emails and logged IP addresses are obscured.</p>
     </article>
 
     <article class="record">
